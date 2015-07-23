@@ -11,3 +11,8 @@ exports.answer = function(req, res) {
     res.render('quizes/answer',{ title: 'Quiz', respuesta: 'Incorrecto...' });
   }
 };
+
+// Get /author
+exports.author = function(req, res) {
+	res.render('author',{ title: 'Quiz', name: 'Fidel López', description: 'Hola! soy un chico informático afincado en Salamanca. Trabajo en una empresa de desarrollo de aplicaciones móviles.', photo: 'images/mi_face.jpg', alt_img: 'soy yo!'});
+}
